@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlertHub - Página de Reporte</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles_perfil.css">
+    <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+</head>
+<body>
+    <header class="bg-white border-bottom shadow-sm">
+        <div class="container d-flex justify-content-between align-items-center py-2">
+            <div class="logo">
+                <a href="page_home.html"><img src="images/logo.png" alt="AlertHub Logo" height="40"></a>
+            </div>
+            <div class="d-flex align-items-center">
+                <nav class="nav-buttons">
+                    <a href="page_home.html"><img src="images/Home_no_color.svg" alt="Página 1" height="30"></a>
+                    <a href="page_reporte.html"><img src="images/Reporte_no_color.svg" alt="Página 2" height="30"></a>
+                    <a href="page_perfil.html"><img src="images/Profile.svg" alt="Página 3" height="30"></a>
+                </nav>
+                <form class="form-inline ml-3">
+                    <input class="form-control rounded-pill" type="search" placeholder="Busca una Noticia" aria-label="Search">
+                </form>
+            </div>
+        </div>
+    </header>
+    <main class="container py-5">
+        <div class="row">
+            <div class="col-lg-6 mb-4 text-center">
+                <div class="d-flex justify-content-around mb-3">
+                    <button class="btn btn-warning text-white" onclick="window.location.href='page_perfil_reportes.html'">Mis reportes</button>
+                    <button class="btn btn-warning text-white" onclick="window.location.href='index.html'">Cerrar Sesión</button>                    
+                </div>
+                <img src="images/AlertHub.svg" alt="AlertHub Phone" class="img-fluid">
+            </div>
+            <div class="col-lg-6 d-flex align-items-center">
+                <div class="profile-card p-4 position-relative w-100">
+                    <div class="profile-card-bg"></div>
+                    <div class="profile-card-content d-flex flex-column align-items-start">
+                        <img src="images/Perfil_Imagen.svg" alt="Profile Picture" class="profile-img mb-3">
+                        <h5 class="profile-name mb-0">Juancito</h5>
+                        <p class="text-muted profile-location">De Arequipa</p>
+                    </div>
+                    <div class="profile-divider bg-warning mb-2"></div>
+                    <p class="profile-text">Comprometido con la seguridad de nuestra comunidad. Ciudadano vigilante y defensor de la tranquilidad vecinal.</p>
+                    <p class="profile-text">¡Hagamos equipo por la seguridad comunitaria! (Me robaron ayer :/)</p>
+                    <div class="profile-divider bg-secondary mt-3"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+    <script src="script_reporte.js"></script>
+</body>
+</html>

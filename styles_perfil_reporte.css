@@ -1,0 +1,175 @@
+body {
+    font-family: 'Fredoka', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    padding: 10px 0;
+}
+
+header .nav-buttons .btn-link {
+    color: #000;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+header .nav-buttons .btn-link.active {
+    color: #ffc107; /* Color amarillo para el botón activo */
+}
+
+header .form-inline {
+    display: flex;
+    align-items: center;
+}
+
+header .form-inline .form-control {
+    border-radius: 50px;
+}
+
+.profile-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    min-height: 600px; /* Altura de la tarjeta ajustada */
+}
+
+.profile-card-bg {
+    background: linear-gradient(to bottom, #ffc107 33%, transparent 33%, transparent 66%, #ffc107 66%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.profile-card-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+}
+
+.profile-img {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.profile-name, .profile-location {
+    text-align: left;
+}
+
+.profile-divider {
+    width: 90%; /* Anchura ajustada para la barra */
+    height: 30px; /* Aumento de la altura para la barra */
+    border-radius: 5px;
+    position: relative;
+}
+
+.profile-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.profile-location {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.profile-text {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 2;
+    line-height: 1.5; /* Altura de línea para mejor espaciado */
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 5px;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+}
+
+@media (max-width: 768px) {
+    .profile-card {
+        margin-top: 20px;
+    }
+}
+
+/* CSS para los nuevos cards */
+.card {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    border-radius: 0 0 15px 15px;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-header {
+    background-color: #fff;
+    border-bottom: none;
+    padding: 10px 15px;
+    border-radius: 15px 15px 0 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    border-radius: 50px;
+    padding: 5px 20px;
+    font-size: 1rem;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.rounded-circle {
+    border-radius: 50%;
+}
+
+.dropdown-menu a {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-menu a img {
+    margin-right: 10px;
+}
+
+.dropdown-item:hover {
+    background-color: #ffc107;
+}

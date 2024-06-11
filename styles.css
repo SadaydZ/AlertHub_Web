@@ -1,0 +1,100 @@
+body {
+    font-family: 'Fredoka', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    padding: 10px 0;
+}
+
+header .social-icons a img {
+    height: 24px;
+}
+
+main {
+    padding: 50px 0;
+}
+
+.login-container {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 20px; /* Aumento del borde para más redondeado */
+    position: relative;
+}
+
+.image-container {
+    max-width: 500px;
+    width: 100%;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px; /* Opcional: Solo si también se quiere tener la imagen redondeada */
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 768px) {
+    .image-container {
+        order: 2; /* Mover la imagen a la derecha para pantallas más grandes */
+    }
+
+    .login-container {
+        order: 1; /* Mantener el formulario de acceso a la izquierda para pantallas más grandes */
+    }
+}
+
+.line-and-ellipse-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.line-2, .line-3 {
+    width: 167.77px;
+    height: 0px;
+    border: 3px solid #808080;
+    transform: rotate(-0.07deg);
+}
+
+.ellipse-672 {
+    width: 8px;
+    height: 8px;
+    background: #6C6B6B;
+    border-radius: 50%;
+    margin: 0 20px;
+}
+
+/* Elementos de formulario redondeados */
+.form-control {
+    border-radius: 50px;
+}
+
+/* Botones redondeados */
+.btn-warning {
+    border-radius: 50px;
+}
+
+/* Sección Info y Join */
+#info-section, #join-section {
+    background-color: #f0f0f0; /* Fondo gris para ambas secciones */
+    min-height: 100vh;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease-out;
+    display: none; /* Inicialmente oculto */
+}
+
+#info-section.show, #join-section.show {
+    opacity: 1;
+    transform: translateY(0);
+    display: flex; /* Mostrar secciones al desplazarse */
+}
+
+/* Asegurarse de que el contenido de texto está al lado de la imagen en pantallas más grandes */
+#info-section .text-content, #join-section .text-content {
+    max-width: 500px;
+}
